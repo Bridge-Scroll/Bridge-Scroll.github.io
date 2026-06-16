@@ -1,0 +1,107 @@
+{
+ "keyword": "bridge scroll",
+ "h1": "Bridge Scroll",
+ "brand": "Scroll Bridge",
+ "niche": "bridge",
+ "verb": "Bridge",
+ "title": "Bridge Scroll - Open App",
+ "meta_description": "bridge scroll opens the official Scroll portal for moving ETH and supported assets between Ethereum and Scroll. Verify domain, connect wallet, bridge.",
+ "palette": {
+  "mode": "light",
+  "bg": "#FFF8F0",
+  "accent": "#FF684B",
+  "ink": "#101010"
+ },
+ "hero_h2": "Move assets between Ethereum and the zkEVM L2",
+ "hero_lead": "Bridge Scroll is a clean route to the official Scroll portal for moving ETH and supported tokens between Ethereum and the Scroll Layer 2 network.",
+ "badge": "Ethereum L2",
+ "widget": {
+  "from": "ETH",
+  "from_net": "Ethereum",
+  "to": "ETH",
+  "to_net": "Scroll",
+  "action": "Open Scroll App"
+ },
+ "trust": [
+  "Official portal",
+  "Scroll Mainnet",
+  "Wallet connection"
+ ],
+ "what_is": "Scroll Bridge is the Scroll portal flow for moving supported assets between Ethereum mainnet and <a href=\"https://scroll.io/\">Scroll</a>, a native zkEVM Layer 2 for Ethereum.",
+ "how": [
+  {
+   "t": "Open the portal",
+   "d": "Start at the official app URL and confirm the portal.scroll.io domain before connecting a wallet."
+  },
+  {
+   "t": "Connect wallet",
+   "d": "Use a wallet that supports Ethereum and Scroll, then approve only the network prompts you expect."
+  },
+  {
+   "t": "Select route",
+   "d": "Choose the asset, direction, and amount shown in the portal; keep gas available on the source network."
+  },
+  {
+   "t": "Review and sign",
+   "d": "Check the wallet confirmation, submit the transaction, and track progress from your wallet or explorer."
+  }
+ ],
+ "points": [
+  {
+   "h": "Official destination",
+   "p": "The action happens in the Scroll portal, so this page should route users directly to the verified app instead of recreating bridge controls."
+  },
+  {
+   "h": "Network-aware flow",
+   "p": "Bridge activity depends on the selected source network, destination network, token, wallet state, and available gas."
+  },
+  {
+   "h": "Risk-aware usage",
+   "p": "Blockchain bridges can carry smart contract and operational risks; ethereum.org has a neutral <a href=\"https://ethereum.org/bridges/\">bridge overview</a> for background."
+  }
+ ],
+ "eeat": [
+  {
+   "text": "Scroll bridge docs",
+   "url": "https://docs.scroll.io/en/user-guide/bridge/"
+  },
+  {
+   "text": "Scroll official site",
+   "url": "https://scroll.io/"
+  },
+  {
+   "text": "Ethereum bridge overview",
+   "url": "https://ethereum.org/bridges/"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is Bridge Scroll?",
+   "a": "Bridge Scroll is an app-first landing page that points users to the official Scroll bridge portal for moving supported assets between Ethereum and Scroll.",
+   "open": true
+  },
+  {
+   "q": "Is Bridge Scroll the official Scroll app?",
+   "a": "No. The official action should happen at <a href=\"https://portal.scroll.io/bridge\">portal.scroll.io/bridge</a>; always verify the domain before connecting a wallet.",
+   "open": false
+  },
+  {
+   "q": "What can I move with Bridge Scroll?",
+   "a": "Use the official portal to see the currently supported assets and routes. Availability can change, so rely on the app rather than a static token list.",
+   "open": false
+  },
+  {
+   "q": "How long does Bridge Scroll take?",
+   "a": "Timing depends on the route, network conditions, and the portal flow. Review the app status and wallet transaction details before assuming settlement is complete.",
+   "open": false
+  },
+  {
+   "q": "Where can I read more before using Bridge Scroll?",
+   "a": "Start with the <a href=\"https://docs.scroll.io/en/user-guide/bridge/\">Scroll bridge docs</a> and compare the instructions with the app screen before signing.",
+   "open": false
+  }
+ ],
+ "official_url": "https://portal.scroll.io/bridge",
+ "official_domain": "portal.scroll.io",
+ "footer_note": "Not the official app. Verify portal.scroll.io before connecting; educational information only, not financial advice."
+}
