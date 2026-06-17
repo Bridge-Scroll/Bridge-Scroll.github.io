@@ -1,0 +1,100 @@
+{
+  "key_facts": {
+    "Category": "Ethereum Layer 2 bridge",
+    "Network": "Scroll",
+    "Token": "ETH for gas; SCR ecosystem token",
+    "Launched": "2023",
+    "Custody": "Non-custodial bridge contracts with L2 withdrawal assumptions"
+  },
+  "intent": [
+    {
+      "q": "Bridge to Scroll from Ethereum",
+      "a": "Bridging to Scroll from Ethereum moves ETH or supported ERC-20 assets from Ethereum mainnet to the Scroll zkEVM network. Users connect a wallet, select Ethereum as source, choose Scroll as destination, review the token and fees, then sign the deposit. After funds arrive, Scroll transactions use ETH for gas. The official <a href=\"https://portal.scroll.io/bridge\">Scroll bridge portal</a> is the primary place to check current supported assets, wallet state, and bridge status. Third-party bridges may offer different assets or faster routes, but their risk and fee models are separate."
+    },
+    {
+      "q": "Scroll bridge withdrawal time and finality",
+      "a": "Scroll withdrawals from L2 to Ethereum are slower than simple deposits because they rely on the network's L2-to-L1 withdrawal process and proof/finality steps. The exact timing can vary with network conditions and bridge design. Fast third-party bridges may provide liquidity-based exits, but they add provider fees and liquidity risk. Users comparing routes should check whether the transaction is an official bridge withdrawal or a fast bridge transfer, the destination token, and the final received amount."
+    },
+    {
+      "q": "Scroll bridge fees and gas token",
+      "a": "Scroll bridge cost depends on direction, source-chain gas, destination-chain gas, and any provider fee. Depositing from Ethereum normally requires Ethereum gas, while activity on Scroll uses ETH as the gas token. If a bridge route includes a swap or third-party liquidity provider, the quote can also include spread, bridge fees, and slippage. The safest comparison is the final amount received on Scroll or Ethereum plus the expected time to completion. Keep ETH on Scroll for approvals, swaps, and withdrawals."
+    },
+    {
+      "q": "Scroll bridge vs zkSync or Base bridge",
+      "a": "Scroll, zkSync, and Base are separate L2 ecosystems, so the right bridge depends on the application and liquidity the user wants. Scroll is a zkEVM-oriented Ethereum L2, zkSync uses its own ZK Stack ecosystem, and Base is built on the OP Stack with strong Coinbase distribution. All use ETH for gas, but their bridge contracts, app ecosystems, withdrawal timing, and token support differ. Users should bridge only to the chain where the target app, NFT, or liquidity pool exists."
+    }
+  ],
+  "compare": {
+    "title": "Scroll bridge vs Base bridge",
+    "rows": [
+      ["Dimension", "Scroll bridge", "Base bridge"],
+      ["Destination network", "Scroll", "Base"],
+      ["Gas token", "ETH", "ETH"],
+      ["Technical profile", "zkEVM-oriented L2", "OP Stack Ethereum L2"],
+      ["Best fit", "Scroll-native apps and zkEVM ecosystem", "Base apps and Coinbase ecosystem routes"]
+    ]
+  },
+  "faq": [
+    {
+      "q": "What is the official Scroll bridge?",
+      "a": "The official Scroll bridge is available through the Scroll portal and is used to move supported assets between Ethereum and Scroll. It is the safest starting point for checking the correct domain, supported assets, and bridge status. Other bridge providers may support Scroll, but they are separate services with their own liquidity, fees, and risk assumptions."
+    },
+    {
+      "q": "What token do I need for gas on Scroll?",
+      "a": "Scroll uses ETH for gas. After bridging to Scroll, keep a small amount of ETH on the Scroll network so you can approve tokens, swap, interact with apps, claim assets, or start a withdrawal. ETH on Ethereum mainnet cannot pay Scroll gas until it is deposited or otherwise moved to Scroll."
+    },
+    {
+      "q": "Can I bridge USDC to Scroll?",
+      "a": "USDC support depends on the bridge route and token representation. Some routes may support USDC directly, while others may use bridged versions or require a swap. Before bridging USDC to Scroll, check the token contract and whether the destination app or exchange supports that exact version. Stablecoin names can look identical while representing different contracts."
+    },
+    {
+      "q": "Why is my Scroll bridge withdrawal taking so long?",
+      "a": "Scroll withdrawals to Ethereum may take longer because L2-to-L1 exits involve proof and finality steps rather than an instant transfer. If the transaction is through the official bridge, check the bridge status and the source transaction hash. If it is through a fast bridge, use that provider's tracker because delays may relate to liquidity, relayers, or a claim step."
+    },
+    {
+      "q": "Does Scroll have a token?",
+      "a": "Scroll has the SCR ecosystem token, but ETH is the gas token used for Scroll network transactions. Users do not need SCR to pay normal gas fees. SCR may be relevant for ecosystem participation, governance, or app-specific uses, while ETH is the operational asset needed to move funds and interact with contracts on Scroll."
+    },
+    {
+      "q": "How do I add Scroll to MetaMask?",
+      "a": "Most users add Scroll by connecting through the official Scroll portal, a trusted app prompt, or wallet network discovery. Confirm the network name, chain ID, RPC, and explorer against official Scroll documentation before approving a custom network. Once added, the wallet must hold ETH on Scroll to pay gas for any transaction."
+    }
+  ],
+  "niche": {
+    "type": "bridge",
+    "asset": "ETH",
+    "receive": "ETH",
+    "supported_networks": ["Ethereum", "Scroll"]
+  },
+  "authority": [
+    {
+      "text": "Scroll bridge portal",
+      "url": "https://portal.scroll.io/bridge"
+    },
+    {
+      "text": "Scroll bridge docs",
+      "url": "https://docs.scroll.io/en/user-guide/bridge/"
+    },
+    {
+      "text": "Scroll L2BEAT profile",
+      "url": "https://l2beat.com/scaling/projects/scroll"
+    },
+    {
+      "text": "Scroll DeFiLlama chain page",
+      "url": "https://defillama.com/chain/Scroll"
+    },
+    {
+      "text": "SCR CoinGecko page",
+      "url": "https://www.coingecko.com/en/coins/scroll"
+    },
+    {
+      "text": "Scroll GitHub",
+      "url": "https://github.com/scroll-tech"
+    }
+  ],
+  "sameAs": [
+    "https://x.com/Scroll_ZKP",
+    "https://github.com/scroll-tech",
+    "https://defillama.com/chain/Scroll"
+  ]
+}
