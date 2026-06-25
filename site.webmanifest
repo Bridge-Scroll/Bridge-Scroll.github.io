@@ -1,22 +1,22 @@
 {
- "name": "Scroll Bridge",
- "short_name": "Scroll Bridge",
- "start_url": "/",
- "display": "standalone",
- "background_color": "#FFFFFF",
- "theme_color": "#FFFFFF",
- "icons": [
-  {
-   "src": "static/icon-192.png",
-   "sizes": "192x192",
-   "type": "image/png",
-   "purpose": "any maskable"
-  },
-  {
-   "src": "static/icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "any maskable"
-  }
- ]
+  "name": "Bridge Scroll",
+  "short_name": "Bridge Scroll",
+  "description": "Bridge Scroll moves ETH and tokens between Ethereum and the Scroll zkEVM from your own wallet.",
+  "start_url": "https://bridge-scroll.github.io/",
+  "scope": "https://bridge-scroll.github.io/",
+  "display": "standalone",
+  "background_color": "#F7F3EE",
+  "theme_color": "#E07B39",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
