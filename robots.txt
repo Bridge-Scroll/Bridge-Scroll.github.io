@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://bridge-scroll.github.io/sitemap.xml
