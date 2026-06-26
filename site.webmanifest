@@ -1,0 +1,22 @@
+{
+  "name": "Bridge Scroll",
+  "short_name": "Bridge Scroll",
+  "description": "Bridge Scroll moves ETH and tokens between Ethereum and the Scroll zkEVM from your own wallet.",
+  "start_url": "https://bridge-scroll.github.io/",
+  "scope": "https://bridge-scroll.github.io/",
+  "display": "standalone",
+  "background_color": "#F7F3EE",
+  "theme_color": "#E07B39",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
