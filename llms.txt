@@ -1,58 +1,31 @@
-# Bridge Scroll
-> An independent, non-custodial informational dashboard for reviewing how assets move between Ethereum and the Scroll zkEVM network.
+# Scroll Bridge
 
-## What is Bridge Scroll
-Bridge Scroll explains routes, costs, timing, and risks before users authorize a transfer from their own wallet. It does not hold private keys or take custody of funds. Scroll’s canonical bridge connects Ethereum with Scroll through protocol gateway and messenger contracts. Unlike liquidity or intent-based bridges that may support many source chains, the canonical bridge uses Scroll’s native cross-domain messaging and finalized rollup state.
-
-## How it works
-1. Connect a self-custody wallet, select the source, destination, asset, amount, and recipient, then review the route and estimated costs.
-2. Approve the token when required and sign the bridge transaction; the interface cannot sign for the user.
-3. For Ethereum-to-Scroll deposits, Ethereum assets are locked by gateway contracts and the corresponding asset is released or represented on Scroll.
-4. For Scroll-to-Ethereum withdrawals, a message enters Scroll’s withdrawal tree; after its batch is finalized with a validity proof on Ethereum, a Merkle proof is submitted in a separate Ethereum transaction to release the L1 asset.
+> Scroll Bridge is the canonical Ethereum–Scroll route: connect your wallet, review the transfer, sign it yourself, and track finalization.
 
 ## Key facts
-- Scroll is an Ethereum zkEVM Layer 2; Ethereum is its settlement and data-availability layer.
-- Scroll Mainnet chain ID is `534352`; Scroll Sepolia chain ID is `534351`.
-- ETH is Scroll’s native gas currency.
-- The canonical bridge connects Ethereum Mainnet and Scroll Mainnet.
-- Gateway contracts support ETH and ERC-20 transfers; protocol contracts also provide ERC-721, ERC-1155, and arbitrary-message gateways.
-- The mainnet L1 Gateway Router is `0xF8B1378579659D8F7EE5f3C929c2f3E332E41Fd6`.
-- Wallet connection is non-custodial, but bridged L1 assets are held by bridge escrow or messenger contracts.
-- Deposits require Ethereum confirmation and Scroll inclusion; withdrawals additionally require rollup finalization and L1 execution.
-- Bridge contracts are upgradeable and include administrative and emergency-pause controls.
+- Route: source chain  destination chain
+- Deposit: typically minutes
+- Withdraw: may need proving/finalization
+- Gas: native asset on both chains
+- Custody: Non-custodial — your wallet signs
+- Verify: Use the official contracts; beware fake bridge sites
 
-## Common questions
-- **Is bridging to Scroll safe?** No bridge is risk-free. Verify the domain, chain, token, recipient, approval scope, and contract route; risks include contract defects, upgrades, compromised interfaces, network disruption, and phishing.
-- **Who controls my wallet?** You retain the keys and sign every approval and transaction. Bridge contracts temporarily control locked assets according to their code and administrative model.
-- **What fees apply?** Deposits use Ethereum gas and may fund L2 message execution. Withdrawals use Scroll gas initially and Ethereum gas when executed on L1.
-- **How long does it take?** Deposits are generally faster than canonical withdrawals. Actual completion depends on Ethereum confirmation, Scroll sequencing, batch proving and finalization, congestion, and whether an L1 execution step remains.
-- **Which assets and chains are supported?** The canonical route is Ethereum–Scroll. Contract-level support covers ETH, ERC-20, ERC-721, and ERC-1155, but users must check the current portal list for enabled tokens.
-- **How do I start?** Fund a compatible wallet with the asset and source-chain gas, open a verified interface, select the route, review every detail, and sign.
+## On this page
+- [What is Scroll Bridge?](https://bridge-scroll.github.io/#what)
+- [How bridging works](https://bridge-scroll.github.io/#how)
+- [Depositing to the destination](https://bridge-scroll.github.io/#deposit)
+- [Withdrawing back](https://bridge-scroll.github.io/#withdraw)
+- [Time and fees](https://bridge-scroll.github.io/#fees)
+- [Is Scroll Bridge safe?](https://bridge-scroll.github.io/#safety)
+- [Problems and fixes](https://bridge-scroll.github.io/#troubleshoot)
+- [FAQ](https://bridge-scroll.github.io/#faq)
 
 ## App
-- Dashboard: https://bridge-scroll.github.io/
-- App: https://bridge-scroll.github.io/dashboard/
+- [Scroll Bridge dashboard](https://bridge-scroll.github.io/)
+- [Open the app](https://bridge-scroll.github.io/dashboard/)
 
-## Official resources
-Scroll Bridge: https://portal.scroll.io/bridge
-Bridge FAQ: https://portal.scroll.io/bridge/faq
-Bridge Documentation: https://docs.scroll.io/en/technology/bridge/
-Developer Bridging Guide: https://docs.scroll.io/en/developers/l1-and-l2-bridging/
-Contract Addresses: https://docs.scroll.io/en/developers/scroll-contracts/
-Bridge Contract Source: https://github.com/scroll-tech/scroll-contracts
-Audits: https://github.com/scroll-tech/scroll-audits
-Security Reviews and Bug Bounty: https://docs.scroll.io/en/technology/security/audits-and-bug-bounty/
-Network Status: https://status.scroll.io/
-Official X: https://x.com/Scroll_ZKP
-
-## Data & references
-L2BEAT Scroll Risk Analysis: https://l2beat.com/scaling/projects/scroll
-Scroll Explorer: https://scrollscan.com/
-Ethereum Explorer: https://etherscan.io/
-Scroll Rollup Explorer: https://scroll.io/rollupscan
-DeFiLlama Scroll: https://defillama.com/chain/scroll
-CoinGecko Scroll Chain: https://www.coingecko.com/en/chains/scroll
-ChainList Scroll Mainnet: https://chainlist.org/chain/534352
-ERC-20 Standard: https://eips.ethereum.org/EIPS/eip-20
-ERC-721 Standard: https://eips.ethereum.org/EIPS/eip-721
-ERC-1155 Standard: https://eips.ethereum.org/EIPS/eip-1155
+## Sources
+- [docs.scroll.io](https://docs.scroll.io/en/developers/l1-and-l2-bridging/)
+- [docs.scroll.io](https://docs.scroll.io/en/technology/)
+- [scrollscan.com](https://scrollscan.com/)
+- [l2beat.com](https://l2beat.com/scaling/projects/scroll)

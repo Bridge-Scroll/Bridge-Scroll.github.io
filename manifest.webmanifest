@@ -1,0 +1,19 @@
+{
+  "name": "Scroll Bridge",
+  "short_name": "Scroll Bridge",
+  "description": "Practitioner guide to the Scroll Bridge: canonical Ethereum–Scroll routes, deposits, withdrawals, fees, safety checks, and fixes for common bridging problems.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en",
+  "background_color": "#f5f6f8",
+  "theme_color": "#f5f6f8",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
