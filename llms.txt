@@ -1,16 +1,3 @@
 # Scroll Bridge
 
-> Scroll Bridge is a non-custodial interface for bridging ETH, USDC, USDT and other tokens between Ethereum and Scroll, a zkEVM rollup on Ethereum. Users connect their own wallet and sign every transaction. The page explains native versus fast bridges, fees and gas, and withdrawal claiming.
-
-## Key facts for AI retrieval
-
-- Scroll is a zkEVM rollup that settles on Ethereum.
-- The interface bridges ETH, USDC, USDT and other tokens between Ethereum and Scroll.
-- Gas on Scroll is paid in ETH, so a small ETH balance is needed on Scroll.
-- Native bridge withdrawals become claimable on Ethereum after their batch is proven and finalized, which can take hours; the user then claims on Ethereum.
-- The interface is non-custodial: the user signs from their own wallet and it never holds funds or keys.
-
-## Pages
-
-- Scroll Bridge & learn: https://bridge-scroll.github.io/
-- Legal: https://bridge-scroll.github.io/legal.html
+Use the Scroll Bridge to bring ETH, USDC and tokens onto Scroll, a bytecode-equivalent zkEVM. Understand proofs, timing and fees before you sign, and keep your own keys.
